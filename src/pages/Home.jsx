@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaFileDownload, FaCode, FaLightbulb, FaRocket, FaUsers } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileDownload, FaCode, FaLightbulb, FaRocket, FaUsers, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 import photoPort from '../assets/photoPort.jpg';
 import { projects } from '../data/projects';
 
@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-[90%] xl:max-w-7xl 2xl:max-w-[1600px] mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12">
             {/* Photo */}
             <div className="w-64 h-64 rounded-full overflow-hidden shadow-2xl border-4 border-white flex-shrink-0">
@@ -83,9 +83,152 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Parcours Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="w-full max-w-[90%] xl:max-w-7xl 2xl:max-w-[1600px] mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Mon Parcours
+          </h2>
+          
+          {/* Timeline */}
+          <div className="relative">
+            {/* Ligne centrale - visible sur desktop */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+            
+            {/* Ligne gauche - visible sur mobile */}
+            <div className="md:hidden absolute left-4 top-0 h-full w-1 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+
+            <div className="space-y-12">
+              {/* Bac */}
+              <div className="relative flex items-center md:justify-center">
+                <div className="flex flex-col md:flex-row items-start md:items-center w-full">
+                  {/* Contenu gauche (desktop) */}
+                  <div className="hidden md:flex md:w-1/2 md:justify-end md:pr-12">
+                    <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-gray-100 hover:border-primary transition-all hover:shadow-xl max-w-md">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-primary text-white p-2 rounded-lg">
+                          <FaGraduationCap size={20} />
+                        </div>
+                        <span className="text-sm font-semibold text-primary">2020 - 2021</span>
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Baccalauréat</h3>
+                      <p className="text-gray-600 font-medium mb-1">Lycée Pierre Marie Théas</p>
+                      <p className="text-gray-500 text-sm">Obtention du baccalauréat, première étape vers le développement web</p>
+                    </div>
+                  </div>
+                  
+                  {/* Point central */}
+                  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
+                  
+                  {/* Contenu mobile */}
+                  <div className="md:hidden ml-12 bg-white p-6 rounded-lg shadow-lg border-2 border-gray-100 hover:border-primary transition-all hover:shadow-xl">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="bg-primary text-white p-2 rounded-lg">
+                        <FaGraduationCap size={20} />
+                      </div>
+                      <span className="text-sm font-semibold text-primary">2020 - 2021</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Baccalauréat</h3>
+                    <p className="text-gray-600 font-medium mb-1">Lycée Pierre Marie Théas</p>
+                    <p className="text-gray-500 text-sm">Obtention du baccalauréat, première étape vers le développement web</p>
+                  </div>
+                  
+                  {/* Espace droit (desktop) */}
+                  <div className="hidden md:block md:w-1/2 md:pl-12"></div>
+                </div>
+              </div>
+
+              {/* BUT 1ère & 2ème année */}
+              <div className="relative flex items-center md:justify-center">
+                <div className="flex flex-col md:flex-row items-start md:items-center w-full">
+                  {/* Espace gauche (desktop) */}
+                  <div className="hidden md:block md:w-1/2 md:pr-12"></div>
+                  
+                  {/* Point central */}
+                  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
+                  
+                  {/* Contenu droit (desktop) */}
+                  <div className="hidden md:flex md:w-1/2 md:pl-12">
+                    <div className="bg-white p-6 rounded-lg shadow-lg border-2 border-gray-100 hover:border-primary transition-all hover:shadow-xl max-w-md">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-secondary text-white p-2 rounded-lg">
+                          <FaGraduationCap size={20} />
+                        </div>
+                        <span className="text-sm font-semibold text-secondary">2021 - 2024</span>
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">BUT Informatique - 1ère & 2ème année</h3>
+                      <p className="text-gray-600 font-medium mb-1">Formation initiale</p>
+                      <p className="text-gray-500 text-sm">Apprentissage des fondamentaux du développement, programmation, bases de données et conception d'applications</p>
+                    </div>
+                  </div>
+                  
+                  {/* Contenu mobile */}
+                  <div className="md:hidden ml-12 bg-white p-6 rounded-lg shadow-lg border-2 border-gray-100 hover:border-primary transition-all hover:shadow-xl">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="bg-secondary text-white p-2 rounded-lg">
+                        <FaGraduationCap size={20} />
+                      </div>
+                      <span className="text-sm font-semibold text-secondary">2021 - 2024</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">BUT Informatique - 1ère & 2ème année</h3>
+                    <p className="text-gray-600 font-medium mb-1">Formation initiale</p>
+                    <p className="text-gray-500 text-sm">Apprentissage des fondamentaux du développement, programmation, bases de données et conception d'applications</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* BUT 3ème année - Alternance */}
+              <div className="relative flex items-center md:justify-center">
+                <div className="flex flex-col md:flex-row items-start md:items-center w-full">
+                  {/* Contenu gauche (desktop) */}
+                  <div className="hidden md:flex md:w-1/2 md:justify-end md:pr-12">
+                    <div className="bg-gradient-to-br from-primary to-secondary p-6 rounded-lg shadow-lg text-white max-w-md relative overflow-hidden">
+                      <div className="absolute top-2 right-2 bg-white text-primary text-xs font-bold px-2 py-1 rounded-full">
+                        En cours
+                      </div>
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="bg-white text-primary p-2 rounded-lg">
+                          <FaBriefcase size={20} />
+                        </div>
+                        <span className="text-sm font-semibold text-blue-100">2024 - 2025</span>
+                      </div>
+                      <h3 className="text-xl font-bold mb-2">BUT Informatique - 3ème année</h3>
+                      <p className="text-blue-100 font-medium mb-1">Alternance</p>
+                      <p className="text-blue-100 text-sm">Mise en pratique professionnelle des compétences acquises, développement d'applications en entreprise</p>
+                    </div>
+                  </div>
+                  
+                  {/* Point central */}
+                  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-5 h-5 bg-white rounded-full border-4 border-primary shadow-lg z-10 animate-pulse"></div>
+                  
+                  {/* Contenu mobile */}
+                  <div className="md:hidden ml-12 bg-gradient-to-br from-primary to-secondary p-6 rounded-lg shadow-lg text-white relative overflow-hidden">
+                    <div className="absolute top-2 right-2 bg-white text-primary text-xs font-bold px-2 py-1 rounded-full">
+                      En cours
+                    </div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="bg-white text-primary p-2 rounded-lg">
+                        <FaBriefcase size={20} />
+                      </div>
+                      <span className="text-sm font-semibold text-blue-100">2024 - 2025</span>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">BUT Informatique - 3ème année</h3>
+                    <p className="text-blue-100 font-medium mb-1">Alternance</p>
+                    <p className="text-blue-100 text-sm">Mise en pratique professionnelle des compétences acquises, développement d'applications en entreprise</p>
+                  </div>
+                  
+                  {/* Espace droit (desktop) */}
+                  <div className="hidden md:block md:w-1/2 md:pl-12"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Compétences rapides */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="w-full max-w-[90%] xl:max-w-7xl 2xl:max-w-[1600px] mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Mes domaines d'expertise
           </h2>
@@ -133,8 +276,8 @@ const Home = () => {
       </section>
 
       {/* Projets en vedette */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="w-full max-w-[90%] xl:max-w-7xl 2xl:max-w-[1600px] mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
             Projets récents
           </h2>
@@ -204,8 +347,8 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary to-secondary text-white">
+        <div className="w-full max-w-[90%] xl:max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">
             Prêt à collaborer sur votre prochain projet ?
           </h2>
