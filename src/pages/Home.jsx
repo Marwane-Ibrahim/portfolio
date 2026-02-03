@@ -275,6 +275,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Objectif professionnel */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="w-full max-w-[90%] xl:max-w-5xl 2xl:max-w-[1200px] mx-auto">
+          <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 md:p-12 shadow-lg border border-gray-100">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-shrink-0">
+                <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
+                  <FaRocket className="text-white text-3xl" />
+                </div>
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  Mon objectif
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  À l'issue de ma formation en BUT Informatique, mon objectif est d'<strong className="text-primary">intégrer le monde professionnel</strong> en tant que développeur web full-stack. 
+                  Je souhaite rejoindre une équipe dynamique où je pourrai mettre à profit mes compétences techniques tout en continuant à apprendre et évoluer.
+                </p>
+                <p className="text-gray-600">
+                  Je suis particulièrement motivé par les projets innovants et les environnements qui favorisent la collaboration et le partage de connaissances.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projets en vedette */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="w-full max-w-[90%] xl:max-w-7xl 2xl:max-w-[1600px] mx-auto">
