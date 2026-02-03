@@ -15,6 +15,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLogoClick = (e) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const navLinks = [
     { name: 'Accueil', path: '/' },
     { name: 'Compétences', path: '/competences' },
@@ -33,7 +40,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-primary hover:text-secondary transition-colors">
+          <Link 
+            to="/" 
+            onClick={handleLogoClick}
+            className="text-2xl font-bold text-primary hover:text-secondary transition-colors"
+          >
             MI
           </Link>
 
