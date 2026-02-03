@@ -32,7 +32,7 @@ export const projects = [
     },
     technologies: ["Godot", "GDScript"],
     competences: ["realiser", "gerer", "collaborer"],
-    image: "/src/assets/bomberman.png",
+    image: "/bomberman.png",
     github: "https://github.com/leonardo-correiamendes/bomberman",
     demo: "https://leonardocm.itch.io/bomberman?secret=9WMqmRyTuugJKm0eTk957zuDyU",
     date: "2 mois",
