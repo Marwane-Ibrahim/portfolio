@@ -1,11 +1,24 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaExternalLinkAlt, FaTimes, FaUsers, FaBriefcase } from 'react-icons/fa';
 import { projects } from '../data/projects';
 import { getCompetenceById } from '../data/competences';
 
 const Projets = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const location = useLocation();
+
+  // Ouvrir automatiquement la modal si un ID est passé dans l'URL
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const projectId = params.get('id');
+    if (projectId) {
+      const project = projects.find(p => p.id === parseInt(projectId));
+      if (project) {
+        openModal(project);
+      }
+    }
+  }, [location.search]);
 
   const openModal = (project) => {
     setSelectedProject(project);
