@@ -113,7 +113,7 @@ const Home = () => {
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">Baccalauréat</h3>
                       <p className="text-gray-600 font-medium mb-1">Lycée Pierre Marie Théas</p>
-                      <p className="text-gray-500 text-sm">Obtention du baccalauréat, première étape vers le développement web</p>
+                      <p className="text-gray-500 text-sm">Obtention du baccalauréat général spécialité NSI Anglais.</p>
                     </div>
                   </div>
                   
@@ -126,11 +126,11 @@ const Home = () => {
                       <div className="bg-primary text-white p-2 rounded-lg">
                         <FaGraduationCap size={20} />
                       </div>
-                      <span className="text-sm font-semibold text-primary">2020 - 2021</span>
+                      <span className="text-sm font-semibold text-primary">2022 - 2023</span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Baccalauréat</h3>
                     <p className="text-gray-600 font-medium mb-1">Lycée Pierre Marie Théas</p>
-                    <p className="text-gray-500 text-sm">Obtention du baccalauréat, première étape vers le développement web</p>
+                    <p className="text-gray-500 text-sm">Obtention du baccalauréat général spécialité NSI Anglais.</p>
                   </div>
                   
                   {/* Espace droit (desktop) */}
@@ -154,7 +154,7 @@ const Home = () => {
                         <div className="bg-secondary text-white p-2 rounded-lg">
                           <FaGraduationCap size={20} />
                         </div>
-                        <span className="text-sm font-semibold text-secondary">2021 - 2024</span>
+                        <span className="text-sm font-semibold text-secondary">2023 - 2025</span>
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">BUT Informatique - 1ère & 2ème année</h3>
                       <p className="text-gray-600 font-medium mb-1">Formation initiale</p>
@@ -168,7 +168,7 @@ const Home = () => {
                       <div className="bg-secondary text-white p-2 rounded-lg">
                         <FaGraduationCap size={20} />
                       </div>
-                      <span className="text-sm font-semibold text-secondary">2021 - 2024</span>
+                      <span className="text-sm font-semibold text-secondary">2023 - 2025</span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">BUT Informatique - 1ère & 2ème année</h3>
                     <p className="text-gray-600 font-medium mb-1">Formation initiale</p>
@@ -190,7 +190,7 @@ const Home = () => {
                         <div className="bg-white text-primary p-2 rounded-lg">
                           <FaBriefcase size={20} />
                         </div>
-                        <span className="text-sm font-semibold text-blue-100">2024 - 2025</span>
+                        <span className="text-sm font-semibold text-blue-100">2025 - 2026</span>
                       </div>
                       <h3 className="text-xl font-bold mb-2">BUT Informatique - 3ème année</h3>
                       <p className="text-blue-100 font-medium mb-1">Alternance</p>
@@ -210,7 +210,7 @@ const Home = () => {
                       <div className="bg-white text-primary p-2 rounded-lg">
                         <FaBriefcase size={20} />
                       </div>
-                      <span className="text-sm font-semibold text-blue-100">2024 - 2025</span>
+                      <span className="text-sm font-semibold text-blue-100">2025 - 2026</span>
                     </div>
                     <h3 className="text-xl font-bold mb-2">BUT Informatique - 3ème année</h3>
                     <p className="text-blue-100 font-medium mb-1">Alternance</p>
